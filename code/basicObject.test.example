@@ -1,0 +1,16 @@
+//__tests__/objectTest.js
+
+test('adding a new key in an object', () => {
+  const states = {
+    RI: 'Rhode Island',
+    MA: 'Massachusetts'
+  };
+
+  states.CT = 'Connecticut';
+
+  expect(states).toEqual({
+    CT: 'Connecticut',
+    MA: 'Massachusetts',
+    RI: 'Rhode Island'
+  });
+});

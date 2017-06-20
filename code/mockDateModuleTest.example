@@ -1,0 +1,11 @@
+// src/__tests__/dateNow.js
+
+test('mock module from __mocks__', () => {
+  // expect(testDate()).toBe(Date.now());
+
+  jest.mock('../dateNow');
+
+  const testDate = require('../dateNow');
+
+  expect(testDate()).toBe('F4K371M3574MP');
+});

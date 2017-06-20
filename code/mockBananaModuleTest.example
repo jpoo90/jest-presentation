@@ -1,0 +1,11 @@
+// src/__tests__/banana.js
+
+test('mock module', () => {
+  jest.mock('../banana', () => {
+    return jest.fn(() => '🍌');
+  });
+
+  const banana = require('../banana');
+
+  expect(banana()).toBe('🍌');
+});

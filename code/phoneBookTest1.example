@@ -1,0 +1,23 @@
+import PhoneBook from '../phoneBook';
+
+let phoneBook;
+
+beforeEach(() => phoneBook = new PhoneBook());
+
+test('add a contact to the phonebook', () => {
+  phoneBook.addContact({ name: 'Juan', phone: 401 });
+  expect(phoneBook.contacts.has('Juan')).toBeTruthy();
+});
+
+test.skip('add phone to an existent contact', () => {
+  phoneBook.addContact({ name: 'Juan', phone: 401 });
+  phoneBook.addContact({ name: 'Juan', phone: 501 });
+  expect(phoneBook.contacts.get('Juan').length).toBe(2);
+});
+
+test.skip('delete contact', () => {
+  phoneBook.addContact({ name: 'Juan', phone: 401 });
+
+  phoneBook.deleteContact('Juan');
+  expect(phoneBook.contacts.size).toBe(0);
+});

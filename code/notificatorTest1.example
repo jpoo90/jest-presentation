@@ -1,0 +1,7 @@
+test('creates an interval waits 5 second', () => {
+  const mockCallback = jest.fn();
+  Notificator(mockCallback, 5);
+
+  expect(setInterval.mock.calls.length).toBe(1);
+  expect(setInterval.mock.calls[0][1]).toBe(5000);
+});

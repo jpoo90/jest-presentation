@@ -1,0 +1,13 @@
+//package.json
+
+{
+  "name": "JestTests",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
+  "scripts": {
+    "test": "jest"
+	}
+}

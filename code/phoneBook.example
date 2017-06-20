@@ -1,0 +1,23 @@
+// Phonebook.js
+
+class PhoneBook {
+  constructor() {
+    this.contacts = new Map();
+  }
+
+  addContact(data) {
+    if (this.contacts.has(data.name)) {
+      this.contacts.get(data.name).push(data.phone);
+    } else {
+      this.contacts.set(data.name, [data.phone]);
+    }
+  }
+
+  deleteContact(contact) {
+    if (this.contacts.has(contact)) {
+      this.contacts.delete(contact);
+    }
+  }
+}
+
+export default PhoneBook;

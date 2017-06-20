@@ -1,0 +1,3 @@
+// src/__mocks__/dateNow.js
+
+module.exports = () => 'F4K371M3574MP';

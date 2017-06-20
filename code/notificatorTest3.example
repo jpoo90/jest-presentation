@@ -1,0 +1,7 @@
+test('callback is called 2 times after timeout', () => {
+  const mockCallback = jest.fn();
+  Notificator(mockCallback, 5);
+
+  jest.runTimersToTime(10000); //ms to run
+  expect(mockCallback).toHaveBeenCalledTimes(2);
+});

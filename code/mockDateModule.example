@@ -1,0 +1,3 @@
+// src/dateNow.js
+
+module.exports = () => Date.now();

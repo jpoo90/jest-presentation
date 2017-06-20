@@ -1,0 +1,26 @@
+// __snapshots__/seasonsActivities.js.snap
+
+exports[`renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      WINTER ❄️
+    </div>
+    <ul>
+      <li>
+        ⛄
+      </li>
+      <li>
+        ⛷️
+      </li>
+      <li>
+        🏂
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div>
+      SPRING 🌱
+    </div>
+  ...
+</div>`;

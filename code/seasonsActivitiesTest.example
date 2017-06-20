@@ -1,0 +1,10 @@
+// __tests__/seasonsActivities.js
+
+import React from 'react';
+import Seasons from '../seasonsActivities';
+import renderer from 'react-test-renderer';
+
+it('renders correctly', () => {
+  const seasonsComponent = renderer.create(<Seasons />).toJSON();
+  expect(seasonsComponent).toMatchSnapshot();
+});

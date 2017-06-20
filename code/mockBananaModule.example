@@ -1,0 +1,3 @@
+// src/banana.js
+
+module.exports = () => 'banana';

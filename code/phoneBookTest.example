@@ -1,0 +1,12 @@
+//__tests__/Phonebook.js
+
+import PhoneBook from '../Phonebook';
+
+let phoneBook;
+
+beforeEach(() => phoneBook = new PhoneBook());
+
+test('add a contact to the phonebook', () => {
+  phoneBook.addContact({ name: 'Juan', phone: 401 });
+  expect(phoneBook.contacts.has('Juan')).toBeTruthy();
+});

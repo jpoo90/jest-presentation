@@ -1,0 +1,7 @@
+// src/__test__/addFive.js
+
+import addFive from '../addFive';
+
+test('should add five to my base', () => {
+  expect(addFive(2)).toBe(7);
+});

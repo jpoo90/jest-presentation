@@ -1,0 +1,27 @@
+class Seasons extends Component {
+    ...
+
+    this.state = {
+      winter: {
+        logo: '❄️',
+        activities: ['⛄', '⛷️']
+      },
+      spring: {
+        logo: '🌱',
+        activities: ['👩‍🌾', '🌻']
+      },
+      summer: {
+        logo: '☀️',
+        activities: []
+      },
+      autumn: {
+        logo: '🍂',
+        activities: []
+      }
+    };
+  }
+
+  ...
+}
+
+export default Seasons;

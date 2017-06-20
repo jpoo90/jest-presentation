@@ -1,0 +1,7 @@
+test('callback is called after timeout', () => {
+  const mockCallback = jest.fn();
+  Notificator(mockCallback, 5);
+
+  jest.runOnlyPendingTimers(); // if use runAll enters a loop
+  expect(mockCallback).toHaveBeenCalledTimes(1);
+});

@@ -1,0 +1,10 @@
+//__tests__/arrayTest.js
+
+test('adding an item to an array', () => {
+  const myArray = ['Spring', '☀️'];
+
+  myArray.push('🌷');
+
+  expect(myArray.length).not.toBeGreaterThanOrEqual(4);
+  expect(myArray).toContain('🌷');
+});

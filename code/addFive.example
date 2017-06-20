@@ -1,0 +1,7 @@
+// src/addFive.js
+
+function addFive(base) {
+  return base + 4;
+}
+
+export default addFive;

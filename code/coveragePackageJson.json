@@ -1,0 +1,12 @@
+//package.json
+
+{
+  "name": "JestTests",
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+	}
+}
