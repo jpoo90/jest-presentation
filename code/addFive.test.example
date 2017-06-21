@@ -1,4 +1,4 @@
-// src/__test__/addFive.js
+// src/__tests__/addFive.js
 
 import addFive from '../addFive';
 

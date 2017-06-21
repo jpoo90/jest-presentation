@@ -332,7 +332,7 @@ export default class Presentation extends React.Component {
               <Appear>
                 <CodePane
                   lang="js"
-                  source="yarn add babel-preset-es2015 babel-jest -D"
+                  source="yarn add babel-preset-es2015 -D"
                   margin="0 0 0 10px"
                   textSize={17}
                 />
