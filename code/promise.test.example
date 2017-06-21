@@ -1,8 +1,8 @@
 // __tests__/async.js
 
-// Jest < 20
-
 import getLanguageByCountry from '../async';
+
+// Jest < 20
 
 test("should return the country's language", () => {
   getLanguageByCountry('TV').then(data => {
@@ -16,12 +16,12 @@ test('should reject when country is not available', () => {
   });
 });
 
-// Jest 20.
+// Jest >=20.
 
-test.skip('test a promise', () => {
+test.skip("should return the country's language", () => {
   expect(getLanguageByCountry('TV')).resolves.toBe('Tuvaluan');
 });
 
-test.skip('async', async () => {
-  await expect(getLanguageByCountry('US')).resolves.toBe('English');
+test.skip('should reject when country is not available', async () => {
+  await expect(getLanguageByCountry('JP')).rejects.toMatch('😶');
 });
