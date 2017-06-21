@@ -707,33 +707,6 @@ export default class Presentation extends React.Component {
             </Fit>
           </Layout>
         </Slide>
-
-        <Slide
-          transition={['fade']}
-          transitionDuration={300}
-          textColor="secondary"
-        >
-          <Heading size={1} textColor="tertiary">References</Heading>
-          <Layout style={{ margin: 50 }}>
-            <List>
-              <ListItem>
-                <Link href="https://facebook.github.io/jest/">
-                  Jest documentation
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link href="https://medium.com/airbnb-engineering/unlocking-test-performance-migrating-from-mocha-to-jest-2796c508ec50">
-                  Unlocking test performance migrating from Mocha to Jest
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link href="http://andrew.codes/jest-vs-mocha-why-jest-wins/">
-                  Jest vs. Mocha: Why Jest wins?
-                </Link>
-              </ListItem>
-            </List>
-          </Layout>
-        </Slide>
         <Slide
           transition={['fade']}
           transitionDuration={300}
@@ -808,6 +781,32 @@ export default class Presentation extends React.Component {
           <Appear>
             <video src={video} autoPlay loop style={{ margin: '20px 0 0 0' }} />
           </Appear>
+        </Slide>
+        <Slide
+          transition={['fade']}
+          transitionDuration={300}
+          textColor="secondary"
+        >
+          <Heading size={1} textColor="tertiary">References</Heading>
+          <Layout style={{ margin: 50 }}>
+            <List>
+              <ListItem>
+                <Link href="https://facebook.github.io/jest/">
+                  Jest documentation
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://medium.com/airbnb-engineering/unlocking-test-performance-migrating-from-mocha-to-jest-2796c508ec50">
+                  Unlocking test performance migrating from Mocha to Jest
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="http://andrew.codes/jest-vs-mocha-why-jest-wins/">
+                  Jest vs. Mocha: Why Jest wins?
+                </Link>
+              </ListItem>
+            </List>
+          </Layout>
         </Slide>
         <Slide
           transition={['zoom', 'spin']}
