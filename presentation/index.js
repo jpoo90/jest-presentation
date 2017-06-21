@@ -49,7 +49,8 @@ const images = {
   snapshotReference: require('../assets/snapshotReference.png'),
   failingSnapshot: require('../assets/failingSnapshot.png'),
   coverageReport: require('../assets/coverageReport.png'),
-  coverageReportHTML: require('../assets/coverageReportHTML.png')
+  coverageReportHTML: require('../assets/coverageReportHTML.png'),
+  squarespaceLogo: require('../assets/squarespaceLogo.svg')
 };
 
 const video = require('file-loader!../assets/JestCodemods.mp4');
@@ -707,6 +708,80 @@ export default class Presentation extends React.Component {
           </Layout>
         </Slide>
 
+        <Slide
+          transition={['fade']}
+          transitionDuration={300}
+          textColor="secondary"
+        >
+          <Heading size={1} textColor="tertiary">References</Heading>
+          <Layout style={{ margin: 50 }}>
+            <List>
+              <ListItem>
+                <Link href="https://facebook.github.io/jest/">
+                  Jest documentation
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://medium.com/airbnb-engineering/unlocking-test-performance-migrating-from-mocha-to-jest-2796c508ec50">
+                  Unlocking test performance migrating from Mocha to Jest
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="http://andrew.codes/jest-vs-mocha-why-jest-wins/">
+                  Jest vs. Mocha: Why Jest wins?
+                </Link>
+              </ListItem>
+            </List>
+          </Layout>
+        </Slide>
+        <Slide
+          transition={['fade']}
+          transitionDuration={300}
+          textColor="secondary"
+        >
+          <Heading size={3} textColor="tertiary">
+            Can I use Jest at
+            <Image
+              src={images.squarespaceLogo}
+              height={175}
+              style={{ margin: '0 0 -60px 0' }}
+            />
+            ?
+          </Heading>
+
+          <Layout style={{ margin: '50px 0 0 0'}}>
+            <Fill>
+              <Appear>
+                <div>
+                  In the monolithic app, squarespace-v6, <strong>not yet</strong>. ☹️
+                  <List margin="0 0 0 100px" textSize="2rem">
+                    <ListItem textSize="2rem">Configuration + regression tests.</ListItem>
+                    <ListItem textSize="2rem"><Code>jest</Code> will probably replace <Code>mocha</Code>.</ListItem>
+                    <ListItem textSize="2rem">≠ <Code>karma</Code> tests (*.spec.js, Browser)</ListItem>
+                  </List>
+                </div>
+              </Appear>
+            </Fill>
+          </Layout>
+          <Layout style={{ margin: '50px 0 0 0'}}>
+            <Fill>
+              <Appear>
+                <div>
+                  In your new apps and external modules, <strong>hell ya!</strong>. 🙌
+                  <List margin="0 0 0 100px">
+                    <ListItem textSize="2rem">
+                      The <Link
+                        href="https://stash.nyc.squarespace.net/projects/WEBM/repos/sqs-i18n"
+                      >
+                        @sqs/i18n
+                      </Link> mono-repo and some of its packages already use it.
+                    </ListItem>
+                  </List>
+                </div>
+              </Appear>
+            </Fill>
+          </Layout>
+        </Slide>
         <Slide
           transition={['fade']}
           transitionDuration={300}
